@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mypygtk"
+version = "0.1.0"
+description = ""
+authors = ["Jonhnatha Trigueiro (Compute Engineer) <joepreludian@gmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "preludian" },
+]
+
+[tool.poetry.scripts]
+preludego = 'preludian.main:run'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyGObject = "^3.42.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
